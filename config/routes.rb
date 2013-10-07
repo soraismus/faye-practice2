@@ -1,5 +1,5 @@
 FayePractice2::Application.routes.draw do
 
-  root "application/index"
+  root "static_pages/index"
 
 end
