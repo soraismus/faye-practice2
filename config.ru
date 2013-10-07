@@ -2,7 +2,7 @@
 
 require ::File.expand_path('../config/environment',  __FILE__)
 #require 'thin'
-require 'faye_server'
+require './faye_server'
 # set :env, :production
 # disable :run, :reload
 
