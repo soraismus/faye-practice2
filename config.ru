@@ -7,7 +7,8 @@ require './faye_server'
 # disable :run, :reload
 
 app = Rack::Builder.new {
-  use Rails::Rack::Static
+#  use Rails::Rack::Static
+  use Rack::Static
   map "/faye" do
     run faye_server
   end
