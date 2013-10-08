@@ -38,24 +38,34 @@ $(function () {
 
   // Event Bindings
 
-  $("#button1-id").click(function (event) {
+  $("#form1-id").submit(function (event) {
+    event.preventDefault();
     handleInput1(event);
   });
 
-  $("#button2-id").click(function (event) {
+  $("#form2-id").submit(function (event) {
+    event.preventDefault();
     handleInput2(event);
   });
 
-  $("#input1-id").keyup(function (event) {
-    if (event.which === 13) {
-      handleInput1(event);
-    }
-  });
+//  $("#button1-id").click(function (event) {
+//    handleInput1(event);
+//  });
 
-  $("#input2-id").keyup(function (event) {
-    if (event.which === 13) {
-      handleInput2(event);
-    }
-  });
+//  $("#button2-id").click(function (event) {
+//    handleInput2(event);
+//  });
+
+//  $("#input1-id").keyup(function (event) {
+//    if (event.which === 13) {
+//      handleInput1(event);
+//    }
+//  });
+
+//  $("#input2-id").keyup(function (event) {
+//    if (event.which === 13) {
+//      handleInput2(event);
+//    }
+//  });
 
 });
